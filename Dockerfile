@@ -10,4 +10,4 @@ FROM debian:stable-slim
 
 COPY --from=build /usr/src/sieves-heap/sieves-heap /bin/sieves-heap
 
-ENTRYPOINT /bin/sieves-heap
+ENTRYPOINT ["/bin/sieves-heap"]
