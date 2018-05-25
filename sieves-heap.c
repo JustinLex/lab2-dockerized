@@ -6,7 +6,7 @@ int columncount = 1;
 
 void print_number(int num)
   {
-    if(columncount==6)
+    if(columncount==COLUMNS)
       {
         printf("%10d \n", num);
         columncount=1;
