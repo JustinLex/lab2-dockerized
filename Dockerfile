@@ -6,7 +6,7 @@ WORKDIR /usr/src/sieves-heap
 RUN gcc -o sieves-heap sieves-heap.c -lm
 
 ## Create container to run program
-FROM alpine
+FROM debian:stable-slim
 
 COPY --from=build /usr/src/sieves-heap/sieves-heap /bin/sieves-heap
 
